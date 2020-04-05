@@ -1,13 +1,14 @@
-#include <cs50.h>
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-    int i,j;
-    int n=get_int("n: ");
-    for(i=1;i<n;i++)
+    int n;
+    printf("Enter the number of lines: ");
+    scanf("%d",&n);
+    
+    for(int i=0; i<n+1; i++)
     {
-        for(j=i;j<=5;j++)
+        for(int j=0;j<i; j++)
         {
             printf("#");
         }
