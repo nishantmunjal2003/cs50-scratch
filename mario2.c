@@ -1,24 +1,36 @@
 #include<stdio.h>
-
-int main(void)
+main()
 {
-    int n=3;
-    do
-    {
-        //printf("Input a valid number (1-8) of lines: ");
-        //scanf("%d",&n);
-    }while(n==0 || n<1 || n>8);
-    for(int lines=0; lines<n+1; lines++)    // number of lines
-    {
-        for(int space=0;space<n; space++)   //number of spaces
-        {
-            
-            printf(" ");
-            for(int k=0;k<j-k; k++)
-            {
-                printf("#");    
-            }
-            printf("\n");
-        }
-    }
+int height=9;
+while(height<1 || height>8)
+{
+printf("Height:");
+scanf("%d",&height);
+}
+int h=height;
+int space=h-1;
+int n=1;
+for(int i=0;i<height;i++)
+{
+for(int j=0;j<space;j++)
+{
+printf(" ");
+
+}
+space--;
+for(int k=0;k<n;k++)
+{
+printf("#");
+
+}
+printf(" ");
+for(int k=0;k<n;k++)
+{
+printf("#");
+
+}
+n++;
+printf("\n");
+
+}
 }
